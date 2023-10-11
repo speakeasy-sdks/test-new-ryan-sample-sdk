@@ -1,4 +1,5 @@
-# authentication
+# Authentication
+(*authentication*)
 
 ## Overview
 
@@ -24,10 +25,7 @@ s = speakeasybar.Speakeasybar(
     ),
 )
 
-req = operations.AuthenticateRequestBody(
-    password='provident',
-    username='Micheal_Sporer',
-)
+req = operations.AuthenticateRequestBody()
 
 res = s.authentication.authenticate(req)
 

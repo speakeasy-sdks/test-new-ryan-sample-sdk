@@ -1,4 +1,5 @@
-# config
+# Config
+(*config*)
 
 ### Available Operations
 
@@ -21,18 +22,7 @@ s = speakeasybar.Speakeasybar(
 )
 
 req = [
-    operations.SubscribeToWebhooksRequestBody(
-        url='illum',
-        webhook=operations.SubscribeToWebhooksRequestBodyWebhook.STOCK_UPDATE,
-    ),
-    operations.SubscribeToWebhooksRequestBody(
-        url='vel',
-        webhook=operations.SubscribeToWebhooksRequestBodyWebhook.STOCK_UPDATE,
-    ),
-    operations.SubscribeToWebhooksRequestBody(
-        url='error',
-        webhook=operations.SubscribeToWebhooksRequestBodyWebhook.STOCK_UPDATE,
-    ),
+    operations.SubscribeToWebhooksRequestBody(),
 ]
 
 res = s.config.subscribe_to_webhooks(req)

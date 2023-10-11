@@ -1,4 +1,5 @@
-# ingredients
+# Ingredients
+(*ingredients*)
 
 ## Overview
 
@@ -26,8 +27,7 @@ s = speakeasybar.Speakeasybar(
 
 
 res = s.ingredients.list_ingredients(ingredients=[
-    'magnam',
-    'debitis',
+    'Cloned',
 ])
 
 if res.ingredients is not None:

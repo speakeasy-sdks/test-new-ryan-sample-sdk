@@ -1,4 +1,5 @@
-# drinks
+# Drinks
+(*drinks*)
 
 ## Overview
 
@@ -26,7 +27,7 @@ s = speakeasybar.Speakeasybar(
 )
 
 
-res = s.drinks.get_drink(name='deserunt')
+res = s.drinks.get_drink(name='Checking')
 
 if res.drink is not None:
     # handle response
@@ -61,7 +62,7 @@ s = speakeasybar.Speakeasybar(
 )
 
 
-res = s.drinks.list_drinks(drink_type=shared.DrinkType.BEER)
+res = s.drinks.list_drinks(drink_type=shared.DrinkType.SPIRIT)
 
 if res.drinks is not None:
     # handle response
